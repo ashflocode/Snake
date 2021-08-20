@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background-color: #96d202;
+}
+
+/* START INFO */
+#startInfo {
+    display: flex;
+	justify-content: center;
+    margin-top: -69%;
+    color: #333;
+    font-size: 2.5rem;
+    animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+    from,
+    to { color: transparent; }
+    50% { color: #333; }
+} 
+
+/* GAME */
+#gameContainer {
+    margin: auto;
+    margin-top: 6%;
+    width: 500px; height: 100%;
+    color: #333;
+}
+
+#topContainer {
+    display: flex;
+	justify-content: center;
+}
+
+#infoContainer {
+    font-size: 1.3rem;
+    width: 35%; height: 9.25rem;
+    text-align: center;
+	justify-content: center;
+}
+#infoInline {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#speedBarContainer {
+    text-align: center;
+	justify-content: center;
+    width: 10%; height: 9rem;
+}
+
+#speedBarContainer progress {
+    appearance: none;
+    transform: rotate(270deg);
+    width: 252%;
+    height: 15%;
+    margin: 3.6rem 0rem 3.3rem -2.4rem;
+    border: 2px solid #333;
+    opacity: 0.8;
+}
+
+#gameOverInfoInline {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+#inst {
+    color: #5f8404;
+    padding-top: 5px;
+}
+
+h2, h5, #speedBarContainer p {
+    margin: 0;
+}
+
+#logo {
+    width: 220px;
+    margin-bottom: 15px;
+    margin-left: 3%;
+}
+
+/* GAME OVER OVERLAY */
+#gameBoard {
+	background-image: url("data/snakeBg.png");
+	background-size: cover;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 5px #333;
+    background-color: #000;
+    width: 500px; height: 500px;
+    display: grid;
+    grid-template-rows: repeat(20, 25px);
+    grid-template-columns: repeat(20, 25px);
+    overflow: hidden;
+}
+
+#gameOver {
+	background-image: url("data/snakeBg.png");
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: -44%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 5px #333;
+    background-color: #000;
+    width: 500px; height: 500px;
+    visibility: hidden;
+}
+#gameOver h3 {
+    margin: 0;
+}
+#gameOver button {
+    color: #333;
+    font-size: 1.8rem;
+    margin: 2rem;
+    width: 10rem;
+}
+
+.snakeHead {
+    background-color: #597a04;
+    border: .3vmin solid #0d111c;
+    border-radius: 5%;
+}
+
+.snakeTail {
+    background-color: #739e06;
+    border: .3vmin solid #0d111c;
+    border-radius: 5%;
+}
+
+.food {
+    background-color: #ff4343;
+    border: .3vmin solid #0d111c;
+    border-radius: 40%;
+}

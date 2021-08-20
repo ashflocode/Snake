@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /><!-- BUTTONS  -->
+        <link rel="stylesheet" href="snakeStyle.css">
+        <script src="snakeScript.js" defer type="module"></script>
+        <title>ASHFLO</title>
+    </head>
+    <body>
+        <div id="gameContainer">
+            <div id="topContainer">
+                <img src="data/snakeLogo.jpg" alt="" id="logo"/>
+                <div id="infoContainer">
+                    <div id="infoInline">
+                        <h2>FOOD: <span id='foodCount'>0</span></h2>
+                        <h2>TIME: <span id='timer'>0:0</span></h2>
+                    </div>
+                    <h5 id="inst">INSTRUCTIONS
+                        <h5>↑</h5>
+                        <h5>← ARROW KEYS →</h5>
+                        <h5>↓</h5>
+                    </h5>
+                </div>
+                <!--  -->
+                <div id="speedBarContainer">
+                    <progress max="20" value="0"></progress>
+                    <p>SPEED</p>
+                </div>
+                <!--  -->
+            </div>
+            <div id="gameBoard"></div>
+
+            <h1 id="startInfo">PRESS ANY ARROW KEY TO START</h1>
+            <div id="gameOver">
+                <h1>GAME OVER!</h1>
+                <div id="gameOverInfoInline">
+                    <h3>FOOD: <span id='foodCountResult'>0</span></h3>
+                    <h3>TIME: <span id='timerResult'>0:0</span></h3>
+                </div>
+                <h2>＼(＾O＾)／</h2>
+                <button onclick="window.location.reload();">PLAY AGAIN</button>
+            </div>
+        </div>
+    </body>
+</html>
