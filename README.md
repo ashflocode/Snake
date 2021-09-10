@@ -1,5 +1,7 @@
 "Trigger nostalgia with a classic game of Snake! Control Snake via the arrow keys and eat as much food as possible, but be careful… the more food you eat, the bigger and faster Snake gets!"
 
+![snakeExample](https://user-images.githubusercontent.com/61547524/132868776-1029cb52-0340-432a-be47-47c19c7e38a4.gif)
+
 Recreating this classic game gave me a deeper understanding of vanilla Javascript as well as HTML, CSS and web development.
 Using modular programming, the user provides input to change the direction of Snake and when Snake meets the food position within the grid, the speed of Snake becomes slightly faster (speed amount is displayed via the meter), Snake increases in size by two body piece, the food renders in a random position and the food counter increases by 1. The game is over when Snake either collides with any wall or itself, of which an overlay is rendered which contains the food count, game play duration and button to play again.
 
